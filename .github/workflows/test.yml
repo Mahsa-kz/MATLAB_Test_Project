@@ -21,4 +21,5 @@ jobs:
 
       - name: Run tests
         run: |
-          octave-cli --eval "runtestQ1"
+          octave-cli --eval "Q1_Q2/runtestQ1"
+          octave-cli --eval "Q1_Q2/runtestQ2"
