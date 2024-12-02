@@ -37,7 +37,9 @@ function output = grow_image(image0, mask, varargin)
     end
     
     % Pad the image
-    padded_image = padarray(image0, [R R], 0);
+    [rows, cols] = size(image0);
+    padded_image = zeros(rows + 2*R, cols + 2*R);  % Create a zero-padded matrix
+    padded_image(R+1:end-R, R+1:end-R) = image0;  % Insert the original image into the center
     output = image0; % Initialize output with the original image
     
     % Iterative growing
