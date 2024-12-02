@@ -1,0 +1,3 @@
+This repository contains a MATLAB project to test and implement the `BlackWhite2D` class. The project includes:
+- A custom binary image growth function.
+- A GitHub Actions workflow to automate testing using Octave.
