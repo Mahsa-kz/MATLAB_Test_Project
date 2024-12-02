@@ -20,6 +20,8 @@ jobs:
           sudo apt-get install -y octave
 
       - name: Run tests
+        working-directory: ./Q1_Q2  # Set the working directory to Q1_Q2
         run: |
-          octave-cli --eval "Q1_Q2/runtestQ1"
-          octave-cli --eval "Q1_Q2/runtestQ2"
+          octave-cli --eval "runtestQ1"
+          octave-cli --eval "runtestQ2"
+
